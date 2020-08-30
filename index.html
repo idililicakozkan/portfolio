@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>İdil Ilıcak Özkan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src = "./js/portfolio.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+<body>
+    <nav id="navbar">
+        <a href="javascript:void(0);" class="hamburgerIcon" onclick="hamburgerClick()">
+            <i class="fa fa-bars fa-1x"></i>
+        </a>
+        <a href="#about">About</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <h1>İdil Ilıcak Özkan</h1>
+        <p>Welcome To My Website</p>
+    </header>
+    <main>
+        <div id = "about" class = "about">
+            <h2>About</h2>
+            <div class = "leftH">
+                <img src = "./img/profile.png" alt = "Profile Picture" class = "responsive">
+            </div>
+            <div class = "rightH">
+                <p>I am a beginner level front-end developer.</p>
+                <p>Because of my creative background I am interested in Web design and development.</p>
+            </div>
+        </div>
+        <div id = "certificates" class = "certificates">
+            <h2>Certificates</h2>
+            <div class = "leftH">
+                <h3><b>Web Design for Everybody - 2020</b></h3>
+                    <ul>
+                        <li>Introduction to HTML5</li><br>
+                        <li>Introduction to CSS3</li><br>
+                        <li>Interactivity with JavaScript</li><br>
+                        <li>Advanced Styling with Responsive Design</li><br>
+                        <li>Web Design for Everybody Capstone</li>
+                    </ul>
+            </div>
+            <div id="certificateCarousel" class="carousel slide rightH" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#certificateCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#certificateCarousel" data-slide-to="1"></li>
+                  <li data-target="#certificateCarousel" data-slide-to="2"></li>
+                  <li data-target="#certificateCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/html5.png" alt="HTML5 Certificate" style="max-width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="./img/css3.png" alt="CSS3 Certificate" style="max-width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="./img/javascript.png" alt="Javascript Certificate" style="max-width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="./img/responsiveDesign.png" alt="Responsive Design Certificate" style="max-width:100%;">
+                    </div>  
+                </div>   
+                <a class="left carousel-control" href="#certificateCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#certificateCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a> 
+            </div>
+            
+        </div>
+        <div id = "contact" class = "contact">
+            <h2>Contact</h2>
+            <a href="mailto: ilicakidil@hotmail.com">
+                <i class="fa fa-envelope fa-2x contactIcon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/idililicakozkan/" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x contactIcon" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/idililicakozkan" target="_blank">
+                <i class="fa fa-github fa-2x contactIcon" aria-hidden="true"></i>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2020 İdil Ilıcak Özkan</p>
+    </footer>
+</body>
