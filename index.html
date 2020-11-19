@@ -10,33 +10,51 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../fonts/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../fonts/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../fonts/favicon-16x16.png">
+    <link rel="manifest" href="../fonts/site.webmanifest">
 <body>
     <nav id="navbar">
         <a href="javascript:void(0);" class="hamburgerIcon" onclick="hamburgerClick()">
             <i class="fa fa-bars fa-1x"></i>
         </a>
-        <a href="#about">About</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><img src="./img/about.png" alt="About"></a>
+        <a href="#techs"><img src="./img/code.png" alt="Techs" style="width: 50px; height: 44px;"></a>
+        <a href="#certificates"><img src="./img/certificate.png" alt="Certificates" style="height: 45px;"></a>
+        <a href="#contact"><img src="./img/contact.png" alt="Contact" style="width: 40px; height: 42;"></a>
     </nav>
     <header>
-        <h1>İdil Ilıcak Özkan</h1>
-        <p>Welcome To My Website</p>
+        <h1>Welcome To My Website</h1>
     </header>
     <main>
-        <div id = "about" class = "about">
-            <h2>About</h2>
-            <div class = "leftH">
-                <img src = "./img/profile.png" alt = "Profile Picture" class = "responsive">
+        <div id = "about" class="sides">
+            <div>
+                <img src="./img/profile.png" alt = "Profile Picture" class = "responsive">
             </div>
-            <div class = "rightH">
+            <div class="about">
+                <p>Hey! I'm İdil &#128516</p>
                 <p>I am a beginner level front-end developer.</p>
-                <p>Because of my creative background I am interested in Web design and development.</p>
+                <p>Because of my creative background I am interested in web design and development.</p>
             </div>
         </div>
-        <div id = "certificates" class = "certificates">
-            <h2>Certificates</h2>
-            <div class = "leftH">
+        <div id="techs" class= "sides">
+            <div>
+                <h2 class="titles"><b>Techs I Can Use</b></h2>
+                <img src="./img/htmlicon.png" alt="Html5" style="width: 75px; height: 85px; padding: 10px">
+                <img src="./img/cssicon.png" alt="Css3" style="width: 75px; height: 85px; padding: 10px">
+                <img src="./img/jsicon.png" alt="JS" style="width: 75px; height: 85px; padding: 10px">
+                <img src="./img/pslogo.png" alt="Ps" style="width: 80px; height: 80px; padding: 10px">
+            </div>
+            <div>
+                <h2 class="titles"><b>Techs I'm Learning</b></h2>
+                <img src="./img/nodejsicon.png" alt="Node.js" style="width: 105px; height: 75px; padding: 10px"">
+                <img src="./img/ailogo.png" alt="Ai" style="width: 80px; height: 80px; padding: 10px">
+            </div>
+        </div>
+        <h2 class="titleCertificate"><b>Certificates</b></h2>
+        <div id = "certificates" class ="sides">
+            <div>
                 <h3><b>Web Design for Everybody - 2020</b></h3>
                     <ul>
                         <li>Introduction to HTML5</li>
@@ -45,6 +63,7 @@
                         <li>Advanced Styling with Responsive Design</li>
                         <li>Web Design for Everybody Capstone</li>
                     </ul>
+                <h3><b>Code Institute, 5 Day Coding Challenge - 2020</b></h3>
             </div>
             <div id="certificateCarousel" class="carousel slide rightH" data-ride="carousel" data-interval="false">
                 <!-- Indicators -->
@@ -53,6 +72,8 @@
                   <li data-target="#certificateCarousel" data-slide-to="1"></li>
                   <li data-target="#certificateCarousel" data-slide-to="2"></li>
                   <li data-target="#certificateCarousel" data-slide-to="3"></li>
+                  <li data-target="#certificateCarousel" data-slide-to="4"></li>
+                  <li data-target="#certificateCarousel" data-slide-to="5"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
@@ -67,6 +88,12 @@
                     <div class="item">
                         <img src="./img/responsiveDesign.png" alt="Responsive Design Certificate" style="max-width:100%;">
                     </div>  
+                    <div class="item">
+                        <img src="./img/finishCertificate.png" alt="Web Design For Everybody Certificate" style="max-width:100%;">
+                    </div>  
+                    <div class="item">
+                        <img src="./img/codeInstitute5DCC.png" alt="Code Institute 5DCC Certificate" style="max-width:100%;">
+                    </div> 
                 </div>   
                 <a class="left carousel-control" href="#certificateCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -79,20 +106,21 @@
             </div>
             
         </div>
-        <div id = "contact" class = "contact">
-            <h2>Contact</h2>
+        <div id = "contact">
+            <h2 class="titles">Contact</h2>
             <a href="mailto:ilicakidil@hotmail.com">
-                <i class="fa fa-envelope fa-2x contactIcon"></i>
+                <i class="fa fa-envelope fa-3x contactIcon"></i>
             </a>
             <a href="https://www.linkedin.com/in/idililicakozkan/" target="_blank">
-                <i class="fa fa-linkedin-square fa-2x contactIcon" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-3x contactIcon" aria-hidden="true"></i>
             </a>
             <a href="https://github.com/idililicakozkan" target="_blank">
-                <i class="fa fa-github fa-2x contactIcon" aria-hidden="true"></i>
+                <i class="fa fa-github fa-3x contactIcon" aria-hidden="true"></i>
             </a>
         </div>
     </main>
     <footer>
+        <p>Thanks for visiting! &#128075;</p>
         <p>&copy;2020 İdil Ilıcak Özkan</p>
     </footer>
 </body>
