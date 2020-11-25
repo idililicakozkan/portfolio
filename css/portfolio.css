@@ -174,17 +174,15 @@ nav a {
     color: #000000;
     text-decoration: none;
 }
-nav a:hover {
-    opacity: 0.5;
-}
 
 .navIcon {
+    opacity: 0.7;
     margin: 10px;
     width: 60px;
 }
 
 .navIcon:hover {
-    opacity: 0.5;
+    opacity: 1.0;
 }
 
 .sticky {
