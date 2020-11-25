@@ -10,6 +10,7 @@
     #navbar a:not([class^="hamburgerIcon"]){
         display: none;
     }
+    
     .responsive {
         max-width: 40%;
         height: auto;
@@ -19,16 +20,16 @@
     }
     .sidenav a {
         float: none;
-        display: block !important;
+        display: inline-block !important;
         text-align: left;
         font-size: 20px;
-        padding: 5px;
+        padding: 10px;
     }
 
     nav {
         text-align: left !important;
     }
-
+  
     .about {
         font-size: 20px;
         text-align: left;
@@ -162,7 +163,7 @@ header {
 nav {
     font-family: 'EbGaramond2', Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: #f4f1de;
+    color: #f2f2f2;
     background-color: rgba(255, 255, 255, 0.2);
     text-align: right;
     width: 100%;
@@ -170,13 +171,22 @@ nav {
     font-size: 20px;
 }
 nav a {
-    padding: 1em;
     color: #000000;
     text-decoration: none;
 }
 nav a:hover {
-    color: #f2cc8f;
+    opacity: 0.5;
 }
+
+.navIcon {
+    margin: 10px;
+    width: 60px;
+}
+
+.navIcon:hover {
+    opacity: 0.5;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -184,6 +194,7 @@ nav a:hover {
 }
 h1{
     font-family: 'EbGaramond2', Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
 }
 
 .titles {
@@ -199,10 +210,33 @@ h1{
 
 .contactIcon:hover {
     color: #6f7390;
+    transition: 0.9s;
+    transform: rotateY(180deg);
 }
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-8.0deg) }
+     50% { transform: rotate(14.0deg) }
+     60% { transform: rotate(-8.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+
 footer {
+    font-size: 15px;
     background-color: #3d405b;
-    color: #f4f1de;
+    color: #f2f2f2;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 2px;
